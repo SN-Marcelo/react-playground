@@ -1,3 +1,4 @@
+import Alert from "./Components/Alert";
 import ListGroup from "./Components/ListGroup";
 function App() {
 	const items = [
@@ -14,7 +15,8 @@ function App() {
 
 	return (
 		<div>
-			<ListGroup items={items} heading={"Countries"} onSelectItem={ handleSelectItem } />
+			<Alert children={<h1>Hello World</h1>}/>
+			{/*<ListGroup items={items} heading={"Countries"} onSelectItem={ handleSelectItem } />*/}
 		</div>
 	);
 }
