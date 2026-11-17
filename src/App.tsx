@@ -16,7 +16,7 @@ function App() {
 	return (
 		<div>
 			<Alert children={<h1>Hello World</h1>}/>
-			{/*<ListGroup items={items} heading={"Countries"} onSelectItem={ handleSelectItem } />*/}
+			<ListGroup items={items} heading={"Countries"} onSelectItem={ handleSelectItem } />
 		</div>
 	);
 }
