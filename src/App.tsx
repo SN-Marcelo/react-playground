@@ -7,10 +7,16 @@ function App() {
 		"Bolivia",
 		"Colombia"
 	];
-	
-	return <div>
-		<ListGroup items={items} heading={"Countries"} />
-	</div>;
+
+	const handleSelectItem = (item: string) => {
+		console.log(item);
+	}
+
+	return (
+		<div>
+			<ListGroup items={items} heading={"Countries"} onSelectItem={ handleSelectItem } />
+		</div>
+	);
 }
 
 export default App;
