@@ -12,6 +12,10 @@ function ListGroup() {
         return <p>Goodbye {name}</p>
     }
 
+    const playAlert = (item: string) => {
+        alert(item);
+    }
+
     return (
         <>
             <h1>List</h1>
@@ -20,7 +24,9 @@ function ListGroup() {
             {items.length === 0 ? <p>No items found</p> : null}
             <ul className="list-group">
                 {items.map(item => (
-                    <li className="list-group-item" key={item}>{item}</li>
+                    <li className="list-group-item" key={item} onClick={() => playAlert(item)}>
+                        {item}
+                    </li>
                 ))}
             </ul>
         </>
